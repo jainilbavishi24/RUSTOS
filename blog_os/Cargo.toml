@@ -1,0 +1,14 @@
+[package]
+name = "blog_os"
+version = "0.1.0"
+authors = ["Philipp Oppermann <dev@phil-opp.com>"]
+edition = "2024"
+
+[dependencies]
+bootloader = { version = "0.9", features = ["map_physical_memory"] }
+volatile = "0.2.6"
+spin = "0.5.2"
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]
