@@ -43,7 +43,7 @@ mod serial;
 
 #[unsafe(no_mangle)]
 pub extern "C" fn _start() -> ! {
-    println!("Hello World{}", "!");
+    println!("Hello World, Printing in QEMU{}", "!");
 
     #[cfg(test)]
     test_main();
